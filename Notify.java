@@ -14,6 +14,7 @@ class EmailNotification extends Notification{
     EmailNotification(String name, String message){
         super(name, message);
     }
+    @Override
     void send(){
         System.out.println("Sending Email to: "+ name);
         System.out.println("Message: "+message);
@@ -26,6 +27,7 @@ class SMSNotification extends Notification{
     SMSNotification(String name, String message){
         super(name, message);
     }
+    @Override
     void send(){
         System.out.println("Sending SMS to:" + name);
         System.out.println("Message: "+message);
@@ -35,11 +37,17 @@ class SMSNotification extends Notification{
 //object to control behaviour
 public class Notify {
     public static void main(String[] args){
-        //                |-> object at runtime choose behaviour
+       /* //                |-> object at runtime choose behaviour(stored in heap)
         Notification n = new EmailNotification("cvbhjk", "hellooooo");
-        //-----------|-> reference to control access
+        //-----------|-> reference to control access(stored in stack)
         n.send();
-        n=new SMSNotification("qaz", "welcome   a");
+        n=new SMSNotification("qaz", "welcome");
         n.send();
+        */
+       Notification[] n = {new EmailNotification("Hats", "Order Confirmed"), 
+       new SMSNotification("H-Hats", "Order confirmed now")};
+       for(Notification nn : n){
+        nn.send();
+       }
     }
 }
