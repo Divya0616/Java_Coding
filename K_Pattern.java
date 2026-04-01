@@ -1,4 +1,5 @@
 import java.util.*;
+import java.lang.Math;
 public class K_Pattern {
     public static void solve(String s){
         int n = s.length();
