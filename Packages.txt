@@ -1,0 +1,6 @@
+Packages -> Organizes the class and interface into a hierarchial structure
+         -> Folders for classes
+
+Two Types : 
+1.Built-in Packages
+2.User-defined Package
