@@ -1,0 +1,7 @@
+LinkedList-> collections of nodes connected using references 
+
+    ex: 1->5->10->15->20->null
+        here, "->" = references
+
+singlyLinkedList- [data|next]
+doublyLinkedList- [prev|data|next]
