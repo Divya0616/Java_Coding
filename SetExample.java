@@ -3,6 +3,7 @@ SET Interface:
 --stores only unique values and it does not allow duplicates
 --uses hashcode() and equals()
 --faster access
+--can store null value once in the set
 
 HashSet
 --does not allow duplicates
