@@ -1,0 +1,21 @@
+Evolution:
+Java 1: WORA => Write once Read Anywhere
+        basic features
+Java 5: for each loop, generics
+Java 7: Exceptional Handling
+Java 8:lambda, Functional Interface, Stream API
+Java  : less code, flexible, powerful
+
+
+Lambda function:(also called anonymous function)
+() -> {}
+() => parameter
+{} => body
+--it always works with functional interface(interface with only one method)
+
+Built-in Functional Interface
+1.Predicate: an interface that takes something and returns true or false
+                Predicate<T> => T:object datatype
+
+2.Consumer: an interface which takes input and does something with it and returns nothing
+            input->action->return nothing: print number, updating value
