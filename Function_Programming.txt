@@ -19,3 +19,8 @@ Built-in Functional Interface
 
 2.Consumer: an interface which takes input and does something with it and returns nothing
             input->action->return nothing: print number, updating value
+
+
+3.Supplier:
+--interface does not take any input and produces a value => using get() value
+Ex: Random number, create new object

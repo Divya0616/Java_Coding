@@ -1,0 +1,12 @@
+StreamAPI:
+--Process the data from collections, array
+--Sequence of elements supports functional operations
+
+Java 7: Imperative style(loops, mutation)
+Java 8+:Declarative Style, Less Boilerplate
+
+--Streams work as pipeline of operations
+--Source->Intermediate operations->Terminal operation
+--Source=> where data comes from
+Intermediate operations=>map, filter
+Terminal operation=>forEach(), toList()
